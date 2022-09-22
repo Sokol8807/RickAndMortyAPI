@@ -7,13 +7,12 @@
 
 import Foundation
 
-
 enum Link: String {
- case userURL = "https://rickandmortyapi.com/api/character/84"
+ case charecterURL = "https://rickandmortyapi.com/api/character/84"
  case imageURL = "https://rickandmortyapi.com/api/character/avatar/84.jpeg"
 }
 
-class NetworkManager {
+final class NetworkManager {
     
     static let shared = NetworkManager()
     
@@ -29,5 +28,30 @@ class NetworkManager {
             }
         }
     }
+    
+    func fetchCharacter(from url: String, completion: @escaping(MyСharacter) -> Void) {
+        
+        guard let url = URL(string: url ) else { return }
+        
+        let session = URLSession(configuration:  .default)
+        
+        let task = session.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            let  jsonDecoder  = JSONDecoder()
+            do {
+                let character = try jsonDecoder.decode(MyСharacter.self , from: data)
+                DispatchQueue.main.async {
+                    completion(character)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        task.resume()
+    }
 }
-
