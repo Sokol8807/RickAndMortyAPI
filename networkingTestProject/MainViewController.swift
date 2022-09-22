@@ -30,10 +30,9 @@ final class MainViewController: UIViewController {
     
     
 }
-
+// MARK: - Networking
 extension MainViewController {
     private func fetchСharacter() {
-        
         NetworkManager.shared.fetchCharacter(from: Link.charecterURL.rawValue) { [weak self] character in
             self?.nameLable.text = character.name
             self?.descriptionLable.text = character.gender

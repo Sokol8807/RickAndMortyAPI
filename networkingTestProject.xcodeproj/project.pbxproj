@@ -41,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD741BBD28DCE5F3008B169E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDAFBABF28D6FEDC00638BA1 /* Users.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FDAFBA9F28D6FD2500638BA1 = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +68,9 @@
 		FDAFBAAA28D6FD2500638BA1 /* networkingTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				FD741BBD28DCE5F3008B169E /* Models */,
 				FDAFBAAB28D6FD2500638BA1 /* AppDelegate.swift */,
 				FDAFBAAD28D6FD2500638BA1 /* SceneDelegate.swift */,
-				FDAFBABF28D6FEDC00638BA1 /* Users.swift */,
 				FD741BBB28DCB23D008B169E /* NetworkManager.swift */,
 				FDAFBAAF28D6FD2500638BA1 /* MainViewController.swift */,
 				FDAFBAB128D6FD2500638BA1 /* Main.storyboard */,
