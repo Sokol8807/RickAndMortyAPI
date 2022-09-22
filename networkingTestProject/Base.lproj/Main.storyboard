@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,21 +11,70 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="networkingTestProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUG-aV-sdA">
+                                <rect key="frame" x="50" y="152" width="290" height="20.333333333333343"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PQM-05-Ld2">
+                                <rect key="frame" x="50" y="192.33333333333334" width="297" height="296.66666666666663"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usw-61-99f">
+                                <rect key="frame" x="53.666666666666657" y="508.99999999999994" width="290" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="rZj-Z6-FRE">
+                                <rect key="frame" x="188" y="330" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="3ER-ca-xcE"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="usw-61-99f" firstAttribute="top" secondItem="PQM-05-Ld2" secondAttribute="bottom" constant="20" id="06J-iX-IBT"/>
+                            <constraint firstItem="PQM-05-Ld2" firstAttribute="top" secondItem="zUG-aV-sdA" secondAttribute="bottom" constant="20" id="7pJ-oO-RbT"/>
+                            <constraint firstItem="zUG-aV-sdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CNJ-6q-lnd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PQM-05-Ld2" secondAttribute="bottom" constant="321" id="CuA-v7-zFz"/>
+                            <constraint firstItem="usw-61-99f" firstAttribute="width" secondItem="PQM-05-Ld2" secondAttribute="width" multiplier="0.976431" id="N0P-uL-GOt"/>
+                            <constraint firstItem="usw-61-99f" firstAttribute="centerX" secondItem="PQM-05-Ld2" secondAttribute="centerX" id="NOM-px-UNY"/>
+                            <constraint firstItem="zUG-aV-sdA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Qnw-XH-Oul"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQM-05-Ld2" secondAttribute="trailing" constant="43" id="TBi-qk-pSa"/>
+                            <constraint firstItem="zUG-aV-sdA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="bCI-wM-Sbi"/>
+                            <constraint firstItem="rZj-Z6-FRE" firstAttribute="firstBaseline" secondItem="PQM-05-Ld2" secondAttribute="firstBaseline" id="hUJ-1U-4p3"/>
+                            <constraint firstItem="PQM-05-Ld2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="nNr-xO-HEU"/>
+                            <constraint firstItem="rZj-Z6-FRE" firstAttribute="centerX" secondItem="PQM-05-Ld2" secondAttribute="centerX" id="oxt-m7-5fG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zUG-aV-sdA" secondAttribute="trailing" constant="50" id="sLc-g4-CdW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatarActivityIndicator" destination="rZj-Z6-FRE" id="Ewf-RW-36K"/>
+                        <outlet property="avatarUIImageView" destination="PQM-05-Ld2" id="rjg-Ws-65M"/>
+                        <outlet property="descriptionLable" destination="usw-61-99f" id="xWD-o2-TOJ"/>
+                        <outlet property="nameLable" destination="zUG-aV-sdA" id="JVO-8e-IbP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.84615384615384" y="3.5545023696682461"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

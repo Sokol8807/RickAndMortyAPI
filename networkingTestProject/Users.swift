@@ -5,9 +5,11 @@
 //  Created by Ilya Sokolov on 18.09.2022.
 //
 
-struct Сharacter: Decodable {
+struct MyСharacter: Decodable {
     let name: String?
     let status: String?
     let species: String?
     let gender: String?
+    let image: String?
 }
+

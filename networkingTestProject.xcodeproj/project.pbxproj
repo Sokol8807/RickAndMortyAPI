@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD741BBC28DCB23D008B169E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD741BBB28DCB23D008B169E /* NetworkManager.swift */; };
 		FDAFBAAC28D6FD2500638BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFBAAB28D6FD2500638BA1 /* AppDelegate.swift */; };
 		FDAFBAAE28D6FD2500638BA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFBAAD28D6FD2500638BA1 /* SceneDelegate.swift */; };
 		FDAFBAB028D6FD2500638BA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFBAAF28D6FD2500638BA1 /* MainViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD741BBB28DCB23D008B169E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FDAFBAA828D6FD2500638BA1 /* networkingTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = networkingTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAFBAAB28D6FD2500638BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDAFBAAD28D6FD2500638BA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				FDAFBAAB28D6FD2500638BA1 /* AppDelegate.swift */,
 				FDAFBAAD28D6FD2500638BA1 /* SceneDelegate.swift */,
 				FDAFBABF28D6FEDC00638BA1 /* Users.swift */,
+				FD741BBB28DCB23D008B169E /* NetworkManager.swift */,
 				FDAFBAAF28D6FD2500638BA1 /* MainViewController.swift */,
 				FDAFBAB128D6FD2500638BA1 /* Main.storyboard */,
 				FDAFBAB428D6FD2600638BA1 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				FDAFBAC028D6FEDC00638BA1 /* Users.swift in Sources */,
 				FDAFBAB028D6FD2500638BA1 /* MainViewController.swift in Sources */,
+				FD741BBC28DCB23D008B169E /* NetworkManager.swift in Sources */,
 				FDAFBAAC28D6FD2500638BA1 /* AppDelegate.swift in Sources */,
 				FDAFBAAE28D6FD2500638BA1 /* SceneDelegate.swift in Sources */,
 			);
