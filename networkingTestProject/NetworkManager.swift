@@ -6,16 +6,16 @@
 //
 
 import Foundation
+import Alamofire
 
 enum Link: String {
- case charecterURL = "https://rickandmortyapi.com/api/character/84"
- case imageURL = "https://rickandmortyapi.com/api/character/avatar/84.jpeg"
+    case charecterURL = "https://rickandmortyapi.com/api/character/84"
+    case imageURL = "https://rickandmortyapi.com/api/character/avatar/84.jpeg"
 }
 
 final class NetworkManager {
     
     static let shared = NetworkManager()
-    
     private init() {}
     
     func fetchImage(from url: String?, completion: @escaping(Data) -> Void) {
@@ -54,4 +54,5 @@ final class NetworkManager {
         }
         task.resume()
     }
+    
 }
